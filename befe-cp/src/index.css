@@ -1,0 +1,196 @@
+
+
+body{
+  background-color:  rgba(138,40,165,0.1);
+  font-family: 'Amiri', sans-serif;
+}
+
+nav{
+ text-align: center;
+}
+
+
+.navBar{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+.navBar li{
+  display: inline;
+}
+
+.navBar a{
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+}
+
+@media screen and (min-width: 768px) {
+  .navBar a{
+    border: 2px solid rgba(76,41,164,0.5);
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    margin: 0.25rem 0.5rem;
+  }
+
+.navBar a:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .navBar .current{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgba(76,41,164,0.2);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body{
+    overflow-x: hidden;
+  }
+
+  .navBar a{
+    margin: 2rem 0.5rem;
+    letter-spacing: 3px;
+  }
+  
+  .navBar a:hover{
+    color: white;
+  }
+
+  .navBar{
+    background-color: rgba(143, 116, 210);
+    position: absolute;    
+    right: 0;
+    border: 1px #000000 solid;
+    height: 16rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .navBar li{
+    opacity: 1;
+    height: 50px;
+  }
+
+  .burger{
+    display: block !important;
+    cursor: pointer;
+    width: 30px;
+    float: right;
+  }
+}
+
+.navBar-active{
+  transform: translateX(0%);
+}
+
+
+  .burger{
+    display: none;
+  }
+
+  .burger div{
+    width: 1.25rem;
+    height: 0.2rem;
+    background-color: rgba(76,41,164,0.5);
+    margin: 0.3rem;
+  }
+
+  .intro{
+    padding: 2rem;
+    text-align: center;  
+  }
+
+
+  .list{
+    border: 2px dotted  rgba(40,67,165,0.5);
+    border-radius: 5px;
+    padding: 1.5rem;
+    width: 50%;
+    text-align: left;
+    margin-top: 100px;
+  }
+
+  .feedback{
+    width: 100%;
+    height: 20rem;
+  }
+  @media screen and (min-width: 768px) {
+  .comments{
+    padding: 1.5rem 3rem;
+  }
+}
+
+  .comments .btn{
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    padding: 0.5rem 1rem;
+  }
+
+.commentSection{
+padding: 2rem;
+}
+
+  @media screen and (min-width: 600px) {
+    .commentSection{
+      display: inline-block;
+      width: 40%;
+      padding: 1.5rem 3rem;
+      float: right;
+    }
+}
+
+  #para{
+    font-style: italic;
+  }
+
+form{
+  padding: 2rem;
+}
+
+@media screen and (min-width: 600px) {
+  form{
+    width: 30%;
+    display: inline-block;
+    float: left;
+  }
+}
+
+  label{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+
+  input{
+    padding: 0.25rem;
+    width: 200px;
+  }
+
+
+    textarea{
+      padding: 0.25rem;
+      width: 200px;
+      max-width: 300px;
+      max-height: 300px;
+    }
+  
+
+  button{
+    cursor: pointer;
+    background: #ffffff;
+  }
+
+  footer{
+    text-align: center;
+    padding-top: 8rem;
+  }
